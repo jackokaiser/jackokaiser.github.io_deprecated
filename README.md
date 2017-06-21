@@ -1,2 +1,3 @@
 # jackokaiser.github.io
-My user website hosted by github
+
+This is the repository containing the code for my personal website [jackokaiser.com](http://www.jackokaiser.com).
