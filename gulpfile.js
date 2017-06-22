@@ -13,7 +13,9 @@ var gulp    = require('gulp'),
   uglify    = require('gulp-uglify'),
   pump    = require('pump'),
   htmlhint    = require('gulp-htmlhint'),
-  webserver = require('gulp-webserver');
+  webserver = require('gulp-webserver'),
+  ghPages = require('gulp-gh-pages');
+
 
 
 // Gulp plumber error handler
@@ -112,5 +114,12 @@ gulp.task('serve', function() {
     .pipe(webserver({
       livereload: true,
       open: true
+    }));
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./app/**/*')
+    .pipe(ghPages({
+      branch: 'master'
     }));
 });
