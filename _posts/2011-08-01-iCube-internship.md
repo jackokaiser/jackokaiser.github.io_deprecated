@@ -3,7 +3,7 @@ layout: post
 section-type: post
 title: Internship in iCube, Strasbourg
 category: work
-tags: [ work' ]
+tags: [ work ]
 ---
 
 Internship of 2 months in the computer graphics research team at iCube, Strasbourg.
