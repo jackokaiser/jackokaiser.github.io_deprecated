@@ -2,7 +2,7 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://jackokaiser.github.io"
+url: "https://jacqueskaiser.com"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -47,7 +47,7 @@ background-img: "../img/intro-bg.jpg"
 ##############################
 
 dynamic-typing: True
-shuffle: True # Shuffle the lines.
+shuffle: False # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
 type-speed: 10
@@ -55,8 +55,8 @@ start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "Hi there."
+  - text: "I'm Jacques Kaiser, computer scientist, global citizen."
   - text: "On this website you will learn more about me."
-  - text: "Scroll down, check it out."
 
 # me-img: "/img/jetpacktocat.png"
 
@@ -184,6 +184,12 @@ social:
     url: "https://github.com/jackokaiser"
   - title: "linkedin"
     url: "https://www.linkedin.com/in/jacqueskaiser"
+  - title: "google-scholar"
+    url: "https://scholar.google.com/citations?user=6dF6lUUAAAAJ&hl=en"
+    ai: True
+  - title: "researchgate"
+    url: "https://www.researchgate.net/profile/Jacques_Kaiser"
+    ai: True
 
 ############
 # 404 page #
@@ -208,6 +214,7 @@ keybase-in-footer: False
 pages_list:
   About: 'about'
   Work: 'latest-post'
+  CV: 'cv'
   Timeline: 'timeline'
   Contact: 'contact'
 

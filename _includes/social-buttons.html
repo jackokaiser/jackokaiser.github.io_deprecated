@@ -2,7 +2,11 @@
 
 <ul class="list-inline social-buttons">
     {% for network in site.social %}
-    <li><a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
+        {% if network.ai %}
+            <li><a title="{{ network.title }}" href="{{ network.url }}" target="_blank"><i class="ai ai-{{ network.title }} ai-fw"></i></a></li>
+        {% else %}
+            <li><a title="{{ network.title }}" href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
+        {% endif %}
     {% endfor %}
     {% if site.keybase-in-social %}
     <li><a href="https://keybase.io/{{site.keybase-username}}" target="_blank"><i class="fa fa-key fa-fw"></i></a></li>
